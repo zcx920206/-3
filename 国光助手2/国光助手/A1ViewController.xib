@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="A1ViewController">
+            <connections>
+                <outlet property="view" destination="tZL-y9-SAZ" id="Z3J-ET-3BH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="tZL-y9-SAZ">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dmX-N5-VeX">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我申请的流程" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmJ-gO-Agg">
+                            <rect key="frame" x="72" y="24" width="177" height="21"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AQ-4h-w1w">
+                            <rect key="frame" x="8" y="20" width="46" height="30"/>
+                            <animations/>
+                            <state key="normal" title="back">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="popbtn:" destination="-1" eventType="touchUpInside" id="KiB-b6-qOD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40d-f7-Yhg">
+                            <rect key="frame" x="270" y="20" width="38" height="30"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="38" id="nQx-9z-283"/>
+                            </constraints>
+                            <state key="normal" title="apply">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="pushbtn:" destination="-1" eventType="touchUpInside" id="lYT-Ya-DjS"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.31764705879999999" green="0.41568627450000001" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="pmJ-gO-Agg" firstAttribute="top" secondItem="dmX-N5-VeX" secondAttribute="top" constant="24" id="2Ez-9H-f1y"/>
+                        <constraint firstItem="pmJ-gO-Agg" firstAttribute="leading" secondItem="2AQ-4h-w1w" secondAttribute="trailing" constant="18" id="2fX-da-icG"/>
+                        <constraint firstItem="pmJ-gO-Agg" firstAttribute="centerY" secondItem="40d-f7-Yhg" secondAttribute="centerY" id="7AD-Lt-b3N"/>
+                        <constraint firstItem="2AQ-4h-w1w" firstAttribute="top" secondItem="dmX-N5-VeX" secondAttribute="top" constant="20" id="Eyg-6h-G1b"/>
+                        <constraint firstItem="40d-f7-Yhg" firstAttribute="baseline" secondItem="2AQ-4h-w1w" secondAttribute="firstBaseline" id="U38-r2-24A"/>
+                        <constraint firstItem="40d-f7-Yhg" firstAttribute="leading" secondItem="pmJ-gO-Agg" secondAttribute="trailing" constant="21" id="Uez-NY-cSx"/>
+                        <constraint firstAttribute="trailing" secondItem="40d-f7-Yhg" secondAttribute="trailing" constant="12" id="W7n-CX-d4U"/>
+                        <constraint firstItem="2AQ-4h-w1w" firstAttribute="leading" secondItem="dmX-N5-VeX" secondAttribute="leadingMargin" id="bGM-fx-9kZ"/>
+                        <constraint firstItem="pmJ-gO-Agg" firstAttribute="centerX" secondItem="dmX-N5-VeX" secondAttribute="centerX" id="iWd-6n-ASK"/>
+                        <constraint firstItem="2AQ-4h-w1w" firstAttribute="baseline" secondItem="40d-f7-Yhg" secondAttribute="firstBaseline" id="m7m-L2-XFL"/>
+                        <constraint firstAttribute="height" constant="69" id="wGm-CO-2GM"/>
+                        <constraint firstItem="pmJ-gO-Agg" firstAttribute="centerY" secondItem="dmX-N5-VeX" secondAttribute="centerY" id="x1X-St-CWm"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TCM-cx-ASt">
+                    <rect key="frame" x="0.0" y="68" width="320" height="500"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="P8M-gh-sDJ"/>
+                        <outlet property="delegate" destination="-1" id="gdZ-dT-SQH"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dmX-N5-VeX" firstAttribute="leading" secondItem="tZL-y9-SAZ" secondAttribute="leading" id="3xq-Gk-mOj"/>
+                <constraint firstAttribute="trailing" secondItem="dmX-N5-VeX" secondAttribute="trailing" id="79d-fd-PIL"/>
+                <constraint firstItem="TCM-cx-ASt" firstAttribute="leading" secondItem="dmX-N5-VeX" secondAttribute="leading" id="JQt-pb-6eK"/>
+                <constraint firstItem="TCM-cx-ASt" firstAttribute="trailing" secondItem="dmX-N5-VeX" secondAttribute="trailing" id="dhV-aQ-tnE"/>
+                <constraint firstAttribute="bottom" secondItem="TCM-cx-ASt" secondAttribute="bottom" id="nX1-cW-hGz"/>
+                <constraint firstItem="TCM-cx-ASt" firstAttribute="top" secondItem="tZL-y9-SAZ" secondAttribute="top" constant="68" id="uyM-QZ-Gcd"/>
+                <constraint firstItem="dmX-N5-VeX" firstAttribute="top" secondItem="tZL-y9-SAZ" secondAttribute="top" id="vRc-cs-Zrg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="60" y="141"/>
+        </view>
+    </objects>
+</document>
